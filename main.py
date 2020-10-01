@@ -10,7 +10,6 @@ def get_top_words(text, min_len=6, words_qty=10):
 
 
 def parse_json(filename, min_len=6, words_qty=10):
-    result = []
     with open(filename, encoding='utf-8') as file:
         file = json.load(file)
         items = file['rss']['channel']['items']
